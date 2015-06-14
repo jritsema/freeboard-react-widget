@@ -3,6 +3,8 @@ freeboard-react-widget
 
 A starter template for building freeboard widgets using react.
 
+This gives you a nice development workflow by allowing you to implement your react component code in code.jsx and define your data (from a freeboard datasource or your code) in data.js, hit save, and then refresh your browser to immediately see your changes (assuming you have script to have freeboard load your dashboard.json) or you can manually re-load your dashboard.
+
 Includes predefined npm scripts for compiling jsx and updating freeboard dashboard.json (using [freeboard-react-buildtool](https://github.com/jritsema/freeboard-react-buildtool)) when files are saved.
 
 **setup**
@@ -14,5 +16,7 @@ $ npm install
 ```
 
 **usage**
+
+Edit your react code in code.jsx and define your data in data.js and then...
 
 `$ npm run build` or `$ npm run dev` or `$ npm run watch`
