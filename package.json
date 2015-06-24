@@ -1,5 +1,5 @@
 {
-  "name": "freeboard-widget-react",
+  "name": "freeboard-react-widget",
   "version": "1.0.0",
   "description": "A starter template for building freeboard widgets using react.",
   "main": "code.jsx",
