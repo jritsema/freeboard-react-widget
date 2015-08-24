@@ -50,5 +50,5 @@ Now you're ready to edit your react code in code.jsx and define your data in dat
 
 **debugging**
 
-Since it's difficult to debug dashboard code that is dynamically loaded/evaled by freeboard, you can load the provided index.html file into your browser to use the browser's debugging tools and react debugging tools to step through your react code.
+Since it's difficult to debug dashboard code that is dynamically loaded/evaled by freeboard, you can load the provided test.html file into your browser to use the browser's debugging tools and react debugging tools to step through your react code.
 
