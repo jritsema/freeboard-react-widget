@@ -1,11 +1,7 @@
-(function() {
-
-  return React.createClass({
-    render: function() {
-      return (
-        <div>Hello {this.props.data.firstName} {this.props.data.lastName}</div>
-      );
-    }
-  });
-
-})();
+module.exports = React.createClass({
+  render: function() {
+    return (
+      <div>Hello {this.props.data.firstName} {this.props.data.lastName}!</div>
+    );
+  }
+});

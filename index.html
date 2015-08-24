@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>react widget test harness</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script>
+      var module = module || {};
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.12.2/react.js"></script>
+    <script src="code.js"></script>
+    <script>
+      React.render(
+        React.createElement(
+          module.exports, { 
+          data: {
+            firstName: 'John',
+            lastName: 'Doe'
+          }
+        }),
+        document.body
+      );
+    </script>
+  </body>
+</html>

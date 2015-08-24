@@ -4,17 +4,16 @@
   "description": "A starter template for building freeboard widgets using react.",
   "main": "code.jsx",
   "scripts": {
-    "prebuild": "echo return > temp #add a return for freeboard",
-    "build": "jsx code.jsx >> temp #transform jsx to js",
-    "postbuild": "cat temp | tr '\n' ' ' > code.js && rm temp #replace newlines with spaces",
+    "build": "jsx code.jsx > code.js",
     "dashboard": "cat ../freeboard/dashboard.json | freeboard-react-buildtool > temp && cp temp ../freeboard/dashboard.json && rm temp",
     "dev": "npm run build && npm run dashboard",
-    "watch": "nodemon --exec npm run dev --watch code.jsx --watch data.js"
+    "watch": "nodemon --exec npm run build --watch code.jsx --watch data.js",
+    "watch-dev": "nodemon --exec npm run dev --watch code.jsx --watch data.js"
   },
   "author": "jritsema",
   "license": "MIT",
   "devDependencies": {
-    "freeboard-react-buildtool": "^1.1.0",
+    "freeboard-react-buildtool": "^2.0.0",
     "nodemon": "^1.3.7",
     "react-tools": "^0.13.3"
   },

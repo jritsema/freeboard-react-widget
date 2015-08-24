@@ -47,3 +47,8 @@ Now you're ready to edit your react code in code.jsx and define your data in dat
 
 ...and this will compile your jsx and then update your dashboard.json with the resulting code and data properties.
 
+
+**debugging**
+
+Since it's difficult to debug dashboard code that is dynamically loaded/evaled by freeboard, you can load the provided index.html file into your browser to use the browser's debugging tools and react debugging tools to step through your react code.
+
