@@ -5,10 +5,15 @@
     <meta charset="utf-8">
   </head>
   <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.12.2/react.js"></script>        
     <script>
       var module = module || {};
+      var require = require || function (args) {
+        if (args.toUpperCase() === 'REACT') 
+          return React;
+        throw new Error('requiring modules other than react is not supported.');
+      };
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.12.2/react.js"></script>
     <script src="code.js"></script>
     <script>
       React.render(
